@@ -1,9 +1,15 @@
-# 86Box-TR-Keybord
-86box programında Türkçe klavye
+# 86Box-TR-Keyboard
 
-# 86Box programında Türkçe Klavye Desteği ve Panodan Yapıştırma
+**86box emülatöründe Türkçe klavye desteği ve panodan yapıştırma fonksiyonu.**
 
-Bu script, [AutoHotkey v2](https://www.autohotkey.com/) kullanılarak hazırlanmış bir araçtır. **86box** emülatöründe **Türkçe klavye** desteği sağlar ve **Ctrl+V** kombinasyonu ile panodaki metinleri emülatör içinde yapıştırmanıza olanak tanır.
+Bu AutoHotkey v2 script, **86box emülatöründe Türkçe klavye düzenini etkinleştirmek** için tasarlanmıştır.  
+Script, US klavye düzenindeki tuşları Türkçe klavyedeki karakterlerle eşleştirerek Türkçe klavye kullanmayı mümkün kılar. 
+
+Ek olarak, **Ctrl+V kombinasyonu** ile panodaki (clipboard) bilgileri emülatör içerisine otomatik olarak yapıştırmayı destekler.  
+Karakterlerin doğru şekilde aktarılması için panodaki Unicode metinler, Türkçe DOS (IBM 857) kodlamasına dönüştürülür ve her karakter emülatöre gönderilir.  
+Bu sayede daha hızlı ve doğru bir yazma ile veri yapıştırma deneyimi sunar.
+
+Bu script, [AutoHotkey v2](https://www.autohotkey.com/) kullanılarak hazırlanmıştır ve özellikle **86box** emülatöründe çalışan sistemler için optimize edilmiştir.
 
 ## Özellikler
 
