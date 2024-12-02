@@ -24,10 +24,13 @@ Bu script, [AutoHotkey v2](https://www.autohotkey.com/) kullanılarak hazırlanm
 
 ## Kurulum ve Kullanım
 
-1. **AutoHotkey v2**'yi sisteminize yükleyin.
-2. **TR-Keybord.ahk** script dosyasını çift tıklayarak çalıştırın.
-3. **86box** emülatörünüzü başlatın.
-4. Script, yalnızca **86box** penceresi aktif olduğunda çalışır.<br>
+- **AutoHotkey v2**'yi sisteminize yüklü ise;
+  - **TR-Keybord.ahk** script dosyasını indirin ve çift tıklayarak çalıştırın.
+- **AutoHotkey v2** sistemde kurulu değilse;
+  - **TR-Keybord.exe** ve **TR-Keybord.ahk** dosyasını aynı klasöre indirin.
+  - **TR-Keybord.exe** dosyasını çalıştırın. 
+- **86box** emülatörünüzü başlatın.
+- Script, yalnızca **86box** penceresi aktif olduğunda çalışır.<br>
 Diğer emülatör programlarında denemek için script kodlarındaki<br>
 <code>#HotIf WinActive("ahk_exe 86Box.exe")</code><br>
 satırındaki <code>86Box.exe</code> yerine program dosyası adını yazın.<br>
