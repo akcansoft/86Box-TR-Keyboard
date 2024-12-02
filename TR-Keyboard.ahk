@@ -1,4 +1,4 @@
-; 86Box_TR_Keybord
+; 86Box_TR_Keyboard
 ; v1.0
 ; 02/12/2024
 
