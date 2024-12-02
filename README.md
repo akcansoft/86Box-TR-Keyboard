@@ -1,20 +1,20 @@
 # 86Box-TR-Keyboard
 
-**86box emülatöründe Türkçe klavye desteği ve panodan yapıştırma fonksiyonu.**
+**86box emülatöründe [Türkçe Q klavye](https://en.wikipedia.org/wiki/QWERTY#/media/File:TurkishQWERTY.png) desteği ve panodan yapıştırma fonksiyonu.**
 
-Bu AutoHotkey v2 script, **86box emülatöründe Türkçe klavye düzenini etkinleştirmek** için tasarlanmıştır.  
-Script, US klavye düzenindeki tuşları Türkçe klavyedeki karakterlerle eşleştirerek Türkçe klavye kullanmayı mümkün kılar. 
+Bu [AutoHotkey v2](https://www.autohotkey.com) script, **[86box](https://www.autohotkey.com/) emülatöründe Türkçe klavye düzenini etkinleştirmek** için tasarlanmıştır.  
+Script, [US klavye düzeni](https://en.wikipedia.org/wiki/QWERTY#/media/File:KB_United_States-NoAltGr.svg)ndeki tuşları [Türkçe Q klavye](https://en.wikipedia.org/wiki/QWERTY#/media/File:TurkishQWERTY.png)deki karakterlerle eşleştirerek Türkçe klavye kullanmayı mümkün kılar. 
 
-Ek olarak, **Ctrl+V kombinasyonu** ile panodaki (clipboard) bilgileri emülatör içerisine otomatik olarak yapıştırmayı destekler.  
-Karakterlerin doğru şekilde aktarılması için panodaki Unicode metinler, Türkçe DOS (IBM 857) kodlamasına dönüştürülür ve her karakter emülatöre gönderilir.  
+Ek olarak, `Ctrl`+`V` kombinasyonu ile panodaki (clipboard) bilgileri emülatör içerisine otomatik olarak yapıştırmayı destekler.  
+Karakterlerin doğru şekilde aktarılması için panodaki Unicode metinler, [Türkçe DOS (IBM 857)](https://en.wikipedia.org/wiki/Code_page_857) kodlamasına dönüştürülür ve her karakter emülatöre gönderilir.  
 Bu sayede daha hızlı ve doğru bir yazma ile veri yapıştırma deneyimi sunar.
 
-Bu script, [AutoHotkey v2](https://www.autohotkey.com/) kullanılarak hazırlanmıştır ve özellikle **86box** emülatöründe çalışan sistemler için optimize edilmiştir.
+Bu script, [AutoHotkey v2](https://www.autohotkey.com/) kullanılarak hazırlanmıştır ve özellikle **[86box](https://www.autohotkey.com/)** emülatöründe çalışan sistemler için optimize edilmiştir.
 
 ## Özellikler
 
-- **Türkçe Klavye Düzeni**: US klavye düzenini Türkçe klavye düzenine çevirir. 
-- **Panodan Yapıştırma**: Panodaki Unicode metinleri Türkçe DOS (IBM 857) kodlamasına dönüştürerek 86box emülatöründe yapıştırır.
+- **Türkçe Klavye Düzeni**: [US klavye düzeni](https://en.wikipedia.org/wiki/QWERTY#/media/File:KB_United_States-NoAltGr.svg)ni [Türkçe Q klavye](https://en.wikipedia.org/wiki/QWERTY#/media/File:TurkishQWERTY.png) düzenine çevirir. 
+- **Panodan Yapıştırma**: Panodaki Unicode metinleri [Türkçe DOS (IBM 857)](https://en.wikipedia.org/wiki/Code_page_857) kodlamasına dönüştürerek 86box emülatöründe yapıştırır.
 - **Düşük Gecikme**: Tuş basışlarına hızlı tepki vermesi için optimize edilmiştir.
 
 ## Gereksinimler
@@ -31,16 +31,16 @@ Bu script, [AutoHotkey v2](https://www.autohotkey.com/) kullanılarak hazırlanm
 Diğer emülatör programlarında denemek için script kodlarındaki<br>
 <code>#HotIf WinActive("ahk_exe 86Box.exe")</code><br>
 satırındaki <code>86Box.exe</code> yerine program dosyası adını yazın.<br>
-VirtualBox ve PCem programlarında denenmiştir. Bu programlar klavye kontrolünü öncelikli ele aldığı için bu script çalışmamaktadır.
+Klavye kontrolünü öncelikli ele aldığı için [VirtualBox](https://www.virtualbox.org/) ve [PCem](https://pcem-emulator.co.uk/) programlarında bu script çalışmamaktadır.
 
 ## Tuş Kombinasyonları
 
 - **Türkçe Karakterler**:
-  - `ç`, `ş`, `ğ`, `ı`, `ö`, `ü` gibi karakterler Türkçe klavyeye uygun şekilde eşlenmiştir.
+  - `ç`, `ş`, `ğ`, `ı`, `ö`, `ü` gibi karakterler [Türkçe Q klavye](https://en.wikipedia.org/wiki/QWERTY#/media/File:TurkishQWERTY.png)ye uygun şekilde eşlenmiştir.
   - Büyük harfler için `Shift` tuşunu kullanabilirsiniz.
   
 - **Panodan Yapıştırma**:
-  - **Ctrl+V**: Panodaki metni Türkçe DOS (IBM 857) kodlaması ile emülatör penceresine yapıştırır.
+  - **Ctrl+V**: Panodaki metni [Türkçe DOS (IBM 857)](https://en.wikipedia.org/wiki/Code_page_857) kodlaması ile emülatör penceresine yapıştırır.
 
 ## Kod Açıklaması
 
