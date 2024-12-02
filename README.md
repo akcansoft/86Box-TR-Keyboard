@@ -25,7 +25,7 @@ Bu script, [AutoHotkey v2](https://www.autohotkey.com/) kullanılarak hazırlanm
 ## Kurulum ve Kullanım
 
 1. **AutoHotkey v2**'yi sisteminize yükleyin.
-2. Scripti çalıştırmak için ahk dosyaya çift tıklayın.
+2. **TR-Keybord.ahk** script dosyasını çift tıklayarak çalıştırın.
 3. **86box** emülatörünüzü başlatın.
 4. Script, yalnızca **86box** penceresi aktif olduğunda çalışır.<br>
 Diğer emülatör programlarında denemek için script kodlarındaki<br>
