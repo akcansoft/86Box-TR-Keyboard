@@ -24,23 +24,22 @@ Bu script, [AutoHotkey v2](https://www.autohotkey.com/) kullanılarak hazırlanm
 
 ## Kurulum ve Kullanım
 
-- **AutoHotkey v2**'yi sisteminize yüklü ise;
-  - **TR-Keybord.ahk** script dosyasını indirin ve çift tıklayarak çalıştırın.
-- **AutoHotkey v2** sistemde kurulu değilse;
-  - **TR-Keybord.exe** ve **TR-Keybord.ahk** dosyasını aynı klasöre indirin.
-  - **TR-Keybord.exe** dosyasını çalıştırın. 
-- **86box** emülatörünüzü başlatın.
+- **AutoHotkey v2** sisteminizde kurulu ise;
+  - **TR-Keyboard.ahk** script dosyasını indirin ve çift tıklayarak çalıştırın.
+- **AutoHotkey v2** sisteminizde kurulu değilse;
+  - Sisteminize uygun **TR-Keyboard_x32.exe** veya **TR-Keyboard_x64.exe** dosyasını indirip çalıştırın.
+- **86box** emülatörünü çalıştırın.
 - Script, yalnızca **86box** penceresi aktif olduğunda çalışır.<br>
 Diğer emülatör programlarında denemek için script kodlarındaki<br>
 <code>#HotIf WinActive("ahk_exe 86Box.exe")</code><br>
-satırındaki <code>86Box.exe</code> yerine program dosyası adını yazın.<br>
+satırındaki <code>86Box.exe</code> yerine program dosyası adını ve .exe uzantısını yazın.<br>
 Klavye kontrolünü öncelikli ele aldığı için [VirtualBox](https://www.virtualbox.org/) ve [PCem](https://pcem-emulator.co.uk/) programlarında bu script çalışmamaktadır.
 
 ## Tuş Kombinasyonları
 
 - **Türkçe Karakterler**:
   - `ç`, `ş`, `ğ`, `ı`, `ö`, `ü` gibi karakterler [Türkçe Q klavye](https://en.wikipedia.org/wiki/QWERTY#/media/File:TurkishQWERTY.png)ye uygun şekilde eşlenmiştir.
-  - Büyük harfler için `Shift` tuşunu kullanabilirsiniz.
+  - Türçeye özgü karakterlerin büyük harfleri için `Shift` tuşunu kullanabilirsiniz. Bu tuşlarda `Caps Lock` tuşu durumu etkisizdir.
   
 - **Panodan Yapıştırma**:
   - **Ctrl+V**: Panodaki metni [Türkçe DOS (IBM 857)](https://en.wikipedia.org/wiki/Code_page_857) kodlaması ile emülatör penceresine yapıştırır.
