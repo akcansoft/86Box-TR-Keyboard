@@ -64,10 +64,11 @@ Belirli tuş kombinasyonlarıyla özel karakterler doğru şekilde yazılamayabi
 `AltGr` + `A` tuşlarına basıldığında `æ` karakteri yazılmaz.
 - **Türkçeye özgü karakterler**<br>
 86box emülatöründeki sanal sistemde Türkçeye özgü karakter bulunmuyorsa, Türkçe karakterler yerine ASCII tablosundaki karşılıkları yazılır.<br>
-Örneğin: `Ğ`,`ğ`,`İ`,`ı`,`Ş`,`ş` karakterleri.
+Örneğin: `Ğ`,`ğ`,`İ`,`ı`,`Ş`,`ş` karakterleri.<br>
+Bu sorunu çözmek için VGA uyumlu ekran kartı kullanılıyorsa [VGATR.COM](https://github.com/akcansoft/86Box-TR-Keyboard/blob/main/VGATR.COM) dosyası çalıştırılır.
 - **Caps Lock tuşu**<br>
 Türkçeye özgü karakterlerde (`ü`, `ğ`, `ı`, `ş`, `ç`, `ö`) `Caps Lock` tuşu etkisizdir.<br>
-Bu karakterlerin büyük hali yalnızca `Shift` tuşu kullanılarak yazılabilir.
+Bu karakterlerin büyük hali `Shift` tuşu kullanılarak yazılabilir.
 
 ## Katkıda Bulunma
 Herhangi bir sorun ya da öneriniz varsa, GitHub üzerinden bir Issue oluşturabilir veya bir Pull Request gönderebilirsiniz.
