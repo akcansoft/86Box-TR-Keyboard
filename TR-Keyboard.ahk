@@ -1,6 +1,7 @@
 ; 86Box_TR_Keyboard
-; v1.0
+; v1.01
 ; 02/12/2024
+; Güncelleme: 05/12/2024
 
 ; Bu AutoHotkey v2 script, 86box emülatöründe Türkçe klavye düzenini etkinleştirmek ve uyarlamak için tasarlanmıştır.
 ; Script, US klavye düzenindeki tuşları Türkçe klavyedeki karakterlere eşleştirir ve Türkçe klavye kullanmayı mümkün kılar.
@@ -26,6 +27,27 @@ ProcessSetPriority "R"
 
 SetKeyDelay -1, 5
 SendMode "Event"
+
+iniDosya := A_ScriptDir "\settings.ini"
+iniSection := "Ayarlar"
+iniKey := "bbGosterme"
+
+g := Gui("ToolWindow","86Box TR Q Klavye")
+;g.SetFont("s10")
+g.AddText(,
+  "Bu uygulama, 86box emülatöründe Türkçe Q klavye kullanımını sağlar.`n"
+  "Ayrıca Ctrl+V ile panodaki metin yapıştırılır."
+ )
+chk1 := g.AddCheckbox("r2","Bunu bir daha gösterme")
+chk1.Value := IniRead(iniDosya,iniSection,iniKey, false)
+g.AddButton(,"Tamam").OnEvent("Click", (*) => btnTamamClick())
+g.AddButton("x+10","Programı Kapat").OnEvent("Click", (*) => ExitApp())
+if chk1.Value = false
+  g.Show()
+
+A_TrayMenu.Delete
+A_TrayMenu.Add "&Hakkında", (*) => g.Show()
+A_TrayMenu.Add "&Kapat", (*) => ExitApp()
 
 ; Kısayollar sadece 86Box programı aktif iken çalışır
 #HotIf WinActive("ahk_exe 86Box.exe")
@@ -147,7 +169,13 @@ SC056::+ç ;PrintChr(60) ; <
   pano := StrReplace(A_Clipboard, "`r`n", "`n") ;
   loop parse, pano, ""
   {
-    PrintChr(ASC857(A_LoopField))
+    c := Ord(A_LoopField)
+    if c < 129 {
+      PrintChr(c)
+    }
+    else {
+      PrintChr(ASC857(A_LoopField))
+    }
   }
 }
 #HotIf
@@ -161,4 +189,9 @@ PrintChr(ascii) {
 ASC857(Chr) { ; OEM Turkish; Turkish DOS = 857 (ibm857)
   Static Buff := Buffer(4, 0)
   Return (StrPut(Chr, Buff, 2, 857), NumGet(Buff, "UShort"))
+}
+
+btnTamamClick(){
+  IniWrite(chk1.value, iniDosya, iniSection, iniKey)
+  g.Hide()
 }
